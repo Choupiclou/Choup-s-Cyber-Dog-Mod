@@ -11,9 +11,9 @@ import net.minecraft.network.chat.Component;
 
 import java.util.List;
 
-public class ScannerItem extends Item {
-	public ScannerItem() {
-		super(new Item.Properties().durability(25).fireResistant().rarity(Rarity.COMMON));
+public class CyberDogUpgrade10Item extends Item {
+	public CyberDogUpgrade10Item() {
+		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.RARE));
 	}
 
 	@Override
@@ -21,8 +21,9 @@ public class ScannerItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.literal(""));
-		list.add(Component.literal("\u00A77When right clicked on your Cyber Dog:"));
-		list.add(Component.literal(" \u00A79Displays all installed modules!"));
+		list.add(Component.literal("\u00A77When right cliked on a tamed Cyber Dog while sneaking:"));
+		list.add(Component.literal(" \u00A77Activate the \u00A79Strenght Module:"));
+		list.add(Component.literal(" \u00A79+4 Attack Damages"));
 		list.add(Component.literal(""));
 	}
 }

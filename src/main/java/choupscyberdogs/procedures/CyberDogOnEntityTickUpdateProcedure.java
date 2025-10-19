@@ -45,5 +45,14 @@ public class CyberDogOnEntityTickUpdateProcedure {
 			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).setBaseValue((((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).getBaseValue() - 10));
 			entity.getPersistentData().putBoolean("HealthModuleEffect", false);
 		}
+		if (entity.getPersistentData().getBoolean("StrenghtModule") == true && entity.getPersistentData().getBoolean("StrenghtModuleEffect") == false) {
+			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE)
+					.setBaseValue((((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).getBaseValue() + 4));
+			entity.getPersistentData().putBoolean("StrenghtModuleEffect", true);
+		} else if (entity.getPersistentData().getBoolean("StrenghtModule") == false && entity.getPersistentData().getBoolean("StrenghtModuleEffect") == true) {
+			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE)
+					.setBaseValue((((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).getBaseValue() - 4));
+			entity.getPersistentData().putBoolean("StrenghtModuleEffect", false);
+		}
 	}
 }

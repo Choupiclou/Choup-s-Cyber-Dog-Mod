@@ -140,5 +140,11 @@
   "item.choups_cyber_dogs.cyber_upgrade_9.description_3": "  §9Inflicts Slowness on hit",
   "item.choups_cyber_dogs.cyber_upgrade_9.description_0": "",
   "item.choups_cyber_dogs.cyber_upgrade_9.description_1": "§7When right cliked on a tamed Cyber Dog while sneaking:",
-  "item.choups_cyber_dogs.cyber_upgrade_9.description_4": ""
+  "item.choups_cyber_dogs.cyber_upgrade_9.description_4": "",
+  "item.choups_cyber_dogs.cyber_dog_upgrade_10.description_4": "",
+  "item.choups_cyber_dogs.cyber_dog_upgrade_10.description_3": "  §9+4 Attack Damages",
+  "item.choups_cyber_dogs.cyber_dog_upgrade_10.description_0": "",
+  "item.choups_cyber_dogs.cyber_dog_upgrade_10": "Cyber Dog Upgrade",
+  "item.choups_cyber_dogs.cyber_dog_upgrade_10.description_2": " §7Activate the §9Strenght Module:",
+  "item.choups_cyber_dogs.cyber_dog_upgrade_10.description_1": "§7When right cliked on a tamed Cyber Dog while sneaking:"
 }

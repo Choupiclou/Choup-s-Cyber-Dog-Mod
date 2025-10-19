@@ -863,6 +863,31 @@
           "src/main/resources/data/choups_cyber_dogs/recipe/cyber_dog_upgrade_slowness_recipe.json"
         ]
       }
+    },
+    {
+      "name": "CyberDogUpgrade10",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_upgrade_10",
+      "metadata": {
+        "files": [
+          "src/main/java/choupscyberdogs/item/CyberDogUpgrade10Item.java",
+          "src/main/resources/assets/choups_cyber_dogs/models/item/cyber_dog_upgrade_10.json"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogUpgradeStrenghtRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_upgrade_strenght_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/recipe/cyber_dog_upgrade_strenght_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -910,7 +935,8 @@
       "CUSTOM:CyberDogUpgrade5",
       "CUSTOM:CyberDogUpgrade7",
       "CUSTOM:CyberUpgrade8",
-      "CUSTOM:CyberUpgrade9"
+      "CUSTOM:CyberUpgrade9",
+      "CUSTOM:CyberDogUpgrade10"
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:ShortCircuitSword"
@@ -936,6 +962,9 @@
       "CUSTOM:ShortCircuitAxe",
       "CUSTOM:ShortCircuitShovel",
       "CUSTOM:ShortCircuitHoe"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Scanner"
     ]
   },
   "tab_element_order": {
@@ -950,6 +979,7 @@
       "StrangeCircuit",
       "CyberDogUpgrade2",
       "CyberDogUpgrade",
+      "CyberDogUpgrade10",
       "CyberUpgrade9",
       "CyberDogUpgrade6",
       "CyberDogUpgrade7",
@@ -1102,7 +1132,13 @@
       "item.choups_cyber_dogs.cyber_upgrade_9.description_3": "  §9Inflicts Slowness on hit",
       "item.choups_cyber_dogs.cyber_upgrade_9.description_0": "",
       "item.choups_cyber_dogs.cyber_upgrade_9.description_1": "§7When right cliked on a tamed Cyber Dog while sneaking:",
-      "item.choups_cyber_dogs.cyber_upgrade_9.description_4": ""
+      "item.choups_cyber_dogs.cyber_upgrade_9.description_4": "",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_10.description_4": "",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_10.description_3": "  §9+4 Attack Damages",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_10.description_0": "",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_10": "Cyber Dog Upgrade",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_10.description_2": " §7Activate the §9Strenght Module:",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_10.description_1": "§7When right cliked on a tamed Cyber Dog while sneaking:"
     }
   },
   "metadata": {

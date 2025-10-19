@@ -3,23 +3,23 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "scanner",
+    "texture": "strenght_circuit",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
-    "name": "§aScanner",
-    "rarity": "COMMON",
+    "name": "Cyber Dog Upgrade",
+    "rarity": "RARE",
     "creativeTabs": [
       {
         "value": "CUSTOM:CyberDogCreativeTab"
       }
     ],
-    "stackSize": 1,
+    "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 25,
+    "damageCount": 0,
     "recipeRemainder": {
       "value": ""
     },
@@ -32,8 +32,9 @@
     "specialInformation": {
       "fixedValue": [
         "",
-        "§7When right clicked on your Cyber Dog:",
-        " §9Displays all installed modules!",
+        "§7When right cliked on a tamed Cyber Dog while sneaking:",
+        " §7Activate the §9Strenght Module:",
+        "  §9+4 Attack Damages",
         ""
       ]
     },

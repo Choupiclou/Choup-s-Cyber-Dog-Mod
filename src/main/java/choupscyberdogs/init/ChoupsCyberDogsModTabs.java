@@ -27,6 +27,7 @@ public class ChoupsCyberDogsModTabs {
 				tabData.accept(ChoupsCyberDogsModItems.STRANGE_CIRCUIT.get());
 				tabData.accept(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_2.get());
 				tabData.accept(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE.get());
+				tabData.accept(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_10.get());
 				tabData.accept(ChoupsCyberDogsModItems.CYBER_UPGRADE_9.get());
 				tabData.accept(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_6.get());
 				tabData.accept(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_7.get());

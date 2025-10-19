@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:redstone"
+    },
+    "b": {
+      "item": "minecraft:blaze_rod"
+    },
+    "c": {
+      "item": "choups_cyber_dogs:strange_circuit"
+    },
+    "d": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "result": {
+    "id": "choups_cyber_dogs:cyber_dog_upgrade_10",
+    "count": 1
+  }
+}

@@ -60,7 +60,7 @@ public class CyberDogRightClickedOnEntityProcedure {
 						}
 						if (world instanceof ServerLevel _level)
 							_level.sendParticles(ParticleTypes.FLAME, x, y, z, 15, 2, 1, 2, 0.25);
-						if (entity instanceof Player _player) {
+						if (sourceentity instanceof Player _player) {
 							ItemStack _stktoremove = new ItemStack(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE.get());
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 						}
@@ -97,7 +97,7 @@ public class CyberDogRightClickedOnEntityProcedure {
 						}
 						if (world instanceof ServerLevel _level)
 							_level.sendParticles(ParticleTypes.FIREWORK, x, y, z, 15, 2, 1, 2, 0.25);
-						if (entity instanceof Player _player) {
+						if (sourceentity instanceof Player _player) {
 							ItemStack _stktoremove = new ItemStack(ChoupsCyberDogsModItems.CYBER_UPGRADE_9.get());
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 						}
@@ -134,7 +134,7 @@ public class CyberDogRightClickedOnEntityProcedure {
 						}
 						if (world instanceof ServerLevel _level)
 							_level.sendParticles(ParticleTypes.CRIMSON_SPORE, x, y, z, 15, 2, 1, 2, 0.25);
-						if (entity instanceof Player _player) {
+						if (sourceentity instanceof Player _player) {
 							ItemStack _stktoremove = new ItemStack(ChoupsCyberDogsModItems.CYBER_UPGRADE_8.get());
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 						}
@@ -171,7 +171,7 @@ public class CyberDogRightClickedOnEntityProcedure {
 						}
 						if (world instanceof ServerLevel _level)
 							_level.sendParticles(ParticleTypes.SMOKE, x, y, z, 15, 2, 1, 2, 0.25);
-						if (entity instanceof Player _player) {
+						if (sourceentity instanceof Player _player) {
 							ItemStack _stktoremove = new ItemStack(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_7.get());
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 						}
@@ -208,7 +208,7 @@ public class CyberDogRightClickedOnEntityProcedure {
 						}
 						if (world instanceof ServerLevel _level)
 							_level.sendParticles(ParticleTypes.CLOUD, x, y, z, 15, 2, 1, 2, 0.25);
-						if (entity instanceof Player _player) {
+						if (sourceentity instanceof Player _player) {
 							ItemStack _stktoremove = new ItemStack(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_2.get());
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 						}
@@ -245,7 +245,7 @@ public class CyberDogRightClickedOnEntityProcedure {
 						}
 						if (world instanceof ServerLevel _level)
 							_level.sendParticles(ParticleTypes.FALLING_SPORE_BLOSSOM, x, y, z, 15, 2, 1, 2, 0.25);
-						if (entity instanceof Player _player) {
+						if (sourceentity instanceof Player _player) {
 							ItemStack _stktoremove = new ItemStack(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_5.get());
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 						}
@@ -282,7 +282,7 @@ public class CyberDogRightClickedOnEntityProcedure {
 						}
 						if (world instanceof ServerLevel _level)
 							_level.sendParticles(ParticleTypes.ENCHANTED_HIT, x, y, z, 15, 2, 1, 2, 0.25);
-						if (entity instanceof Player _player) {
+						if (sourceentity instanceof Player _player) {
 							ItemStack _stktoremove = new ItemStack(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_4.get());
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 						}
@@ -319,8 +319,45 @@ public class CyberDogRightClickedOnEntityProcedure {
 						}
 						if (world instanceof ServerLevel _level)
 							_level.sendParticles(ParticleTypes.ELECTRIC_SPARK, x, y, z, 15, 2, 1, 2, 0.25);
-						if (entity instanceof Player _player) {
+						if (sourceentity instanceof Player _player) {
 							ItemStack _stktoremove = new ItemStack(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_3.get());
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
+					}
+				}
+				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_10.get()) {
+					if (entity.getPersistentData().getBoolean("StrenghtModule") == true) {
+						if (sourceentity instanceof Player _player && !_player.level().isClientSide())
+							_player.displayClientMessage(Component.literal("Your Cyber Dog already has this upgrade."), true);
+					} else {
+						if (sourceentity instanceof LivingEntity _entity)
+							_entity.swing(InteractionHand.MAIN_HAND, true);
+						entity.getPersistentData().putBoolean("StrenghtModule", true);
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.player.burp")), SoundSource.NEUTRAL, 1, (float) 0.8);
+							} else {
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.player.burp")), SoundSource.NEUTRAL, 1, (float) 0.8, false);
+							}
+						}
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, (float) 1.5, (float) 1.2);
+							} else {
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, (float) 1.5, (float) 1.2, false);
+							}
+						}
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.anvil.use")), SoundSource.NEUTRAL, 1, (float) 0.8);
+							} else {
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.anvil.use")), SoundSource.NEUTRAL, 1, (float) 0.8, false);
+							}
+						}
+						if (world instanceof ServerLevel _level)
+							_level.sendParticles(ParticleTypes.CRIT, x, y, z, 15, 2, 1, 2, 0.25);
+						if (sourceentity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_10.get());
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 						}
 					}
@@ -356,7 +393,7 @@ public class CyberDogRightClickedOnEntityProcedure {
 						}
 						if (world instanceof ServerLevel _level)
 							_level.sendParticles(ParticleTypes.MYCELIUM, x, y, z, 15, 2, 1, 2, 0.25);
-						if (entity instanceof Player _player) {
+						if (sourceentity instanceof Player _player) {
 							ItemStack _stktoremove = new ItemStack(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_6.get());
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 						}
@@ -416,6 +453,10 @@ public class CyberDogRightClickedOnEntityProcedure {
 						_player.displayClientMessage(Component.literal("Your Cyber Dog is staying here."), true);
 				}
 				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ChoupsCyberDogsModItems.SCANNER.get()) {
+					if (world instanceof ServerLevel _level) {
+						(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).hurtAndBreak(1, _level, null, _stkprov -> {
+						});
+					}
 					if (sourceentity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal("\u00A7eCyber dog's installed modules:"), false);
 					if (entity.getPersistentData().getBoolean("FieryAttacks") == true) {
@@ -453,6 +494,10 @@ public class CyberDogRightClickedOnEntityProcedure {
 					if (entity.getPersistentData().getBoolean("SlownessModule") == true) {
 						if (sourceentity instanceof Player _player && !_player.level().isClientSide())
 							_player.displayClientMessage(Component.literal("Slowness Module"), false);
+					}
+					if (entity.getPersistentData().getBoolean("StrenghtModule") == true) {
+						if (sourceentity instanceof Player _player && !_player.level().isClientSide())
+							_player.displayClientMessage(Component.literal("Strenght Module"), false);
 					}
 				}
 			}
