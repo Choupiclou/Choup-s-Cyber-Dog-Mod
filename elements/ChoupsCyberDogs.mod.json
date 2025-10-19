@@ -2,7 +2,7 @@
   "_fv": 79,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Choup's Cyber Dogs",
+    "achievementName": "§eChoup's Cyber Dogs",
     "achievementDescription": "Join the world with Choup's Cyber Dogs installed!",
     "achievementIcon": {
       "value": "CUSTOM:CyberDog01.spawn_egg"

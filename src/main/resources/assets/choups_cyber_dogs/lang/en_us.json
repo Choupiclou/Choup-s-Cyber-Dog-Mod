@@ -57,7 +57,7 @@
   "item.choups_cyber_dogs.cyber_upgrade_8.description_4": "",
   "item.choups_cyber_dogs.cyber_upgrade_8.description_1": "§7When right cliked on a tamed Cyber Dog while sneaking:",
   "item.choups_cyber_dogs.cyber_upgrade_8": "Cyber Dog Upgrade",
-  "item.choups_cyber_dogs.cyber_upgrade_8.description_2": " §7Activate the §9VampireModule",
+  "item.choups_cyber_dogs.cyber_upgrade_8.description_2": " §7Activate the §9Vampire Module",
   "item.choups_cyber_dogs.cyber_upgrade_8.description_0": "",
   "item.choups_cyber_dogs.scanner.description_2": " §9Displays all installed modules!",
   "item.choups_cyber_dogs.scanner.description_3": "",
@@ -116,7 +116,7 @@
   "item.choups_cyber_dogs.short_circuit_hoe.description_8": "",
   "item.choups_cyber_dogs.short_circuit_hoe": "§aShort-Circuit Hoe",
   "advancements.choups_cyber_dogs.descr": "Join the world with Choup\u0027s Cyber Dogs installed!",
-  "advancements.choups_cyber_dogs.title": "Choup\u0027s Cyber Dogs",
+  "advancements.choups_cyber_dogs.title": "§eChoup\u0027s Cyber Dogs",
   "advancements.strange_circuit_advancement.title": "Strange Circuit",
   "advancements.strange_circuit_advancement.descr": "Obtain or craft a Strange Circuit",
   "advancements.short_circuit_sword_advancement.descr": "Obtain or craft a Short-Circuit Sword",
@@ -134,5 +134,11 @@
   "advancements.cyber_dog_advancement.descr": "Create a Cyber Dog",
   "advancements.cyber_dog_advancement.title": "Cyber Dog",
   "advancements.scanner_advancement.title": "Scanner",
-  "advancements.scanner_advancement.descr": "Craft a Scanner"
+  "advancements.scanner_advancement.descr": "Craft a Scanner",
+  "item.choups_cyber_dogs.cyber_upgrade_9": "Cyber Dog Upgrade",
+  "item.choups_cyber_dogs.cyber_upgrade_9.description_2": " §7Activate the §9Slowness Module",
+  "item.choups_cyber_dogs.cyber_upgrade_9.description_3": "  §9Inflicts Slowness on hit",
+  "item.choups_cyber_dogs.cyber_upgrade_9.description_0": "",
+  "item.choups_cyber_dogs.cyber_upgrade_9.description_1": "§7When right cliked on a tamed Cyber Dog while sneaking:",
+  "item.choups_cyber_dogs.cyber_upgrade_9.description_4": ""
 }

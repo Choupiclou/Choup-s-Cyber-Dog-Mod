@@ -838,6 +838,31 @@
           "src/main/resources/data/choups_cyber_dogs/advancement/scanner_advancement.json"
         ]
       }
+    },
+    {
+      "name": "CyberUpgrade9",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_upgrade_9",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/choups_cyber_dogs/models/item/cyber_upgrade_9.json",
+          "src/main/java/choupscyberdogs/item/CyberUpgrade9Item.java"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogUpgradeSlownessRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_upgrade_slowness_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/recipe/cyber_dog_upgrade_slowness_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -882,7 +907,10 @@
       "CUSTOM:CyberDogUpgrade2",
       "CUSTOM:CyberDogUpgrade3",
       "CUSTOM:CyberDogUpgrade4",
-      "CUSTOM:CyberDogUpgrade5"
+      "CUSTOM:CyberDogUpgrade5",
+      "CUSTOM:CyberDogUpgrade7",
+      "CUSTOM:CyberUpgrade8",
+      "CUSTOM:CyberUpgrade9"
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:ShortCircuitSword"
@@ -898,6 +926,16 @@
     ],
     "ITEMS:minecraft:hoes": [
       "~CUSTOM:ShortCircuitHoe"
+    ],
+    "ENTITIES:forge:armageddon_bosses": [
+      "CUSTOM:CyberDog01"
+    ],
+    "ITEMS:forge:netherite_tools": [
+      "CUSTOM:ShortCircuitSword",
+      "CUSTOM:ShortCircuitPickaxe",
+      "CUSTOM:ShortCircuitAxe",
+      "CUSTOM:ShortCircuitShovel",
+      "CUSTOM:ShortCircuitHoe"
     ]
   },
   "tab_element_order": {
@@ -910,14 +948,15 @@
       "ShortCircuitHoe",
       "Scanner",
       "StrangeCircuit",
-      "CyberDogUpgrade",
       "CyberDogUpgrade2",
-      "CyberDogUpgrade3",
-      "CyberDogUpgrade4",
-      "CyberDogUpgrade5",
+      "CyberDogUpgrade",
+      "CyberUpgrade9",
       "CyberDogUpgrade6",
       "CyberDogUpgrade7",
-      "CyberUpgrade8"
+      "CyberDogUpgrade4",
+      "CyberUpgrade8",
+      "CyberDogUpgrade3",
+      "CyberDogUpgrade5"
     ]
   },
   "language_map": {
@@ -980,7 +1019,7 @@
       "item.choups_cyber_dogs.cyber_upgrade_8.description_4": "",
       "item.choups_cyber_dogs.cyber_upgrade_8.description_1": "§7When right cliked on a tamed Cyber Dog while sneaking:",
       "item.choups_cyber_dogs.cyber_upgrade_8": "Cyber Dog Upgrade",
-      "item.choups_cyber_dogs.cyber_upgrade_8.description_2": " §7Activate the §9VampireModule",
+      "item.choups_cyber_dogs.cyber_upgrade_8.description_2": " §7Activate the §9Vampire Module",
       "item.choups_cyber_dogs.cyber_upgrade_8.description_0": "",
       "item.choups_cyber_dogs.scanner.description_2": " §9Displays all installed modules!",
       "item.choups_cyber_dogs.scanner.description_3": "",
@@ -1039,7 +1078,7 @@
       "item.choups_cyber_dogs.short_circuit_hoe.description_8": "",
       "item.choups_cyber_dogs.short_circuit_hoe": "§aShort-Circuit Hoe",
       "advancements.choups_cyber_dogs.descr": "Join the world with Choup\u0027s Cyber Dogs installed!",
-      "advancements.choups_cyber_dogs.title": "Choup\u0027s Cyber Dogs",
+      "advancements.choups_cyber_dogs.title": "§eChoup\u0027s Cyber Dogs",
       "advancements.strange_circuit_advancement.title": "Strange Circuit",
       "advancements.strange_circuit_advancement.descr": "Obtain or craft a Strange Circuit",
       "advancements.short_circuit_sword_advancement.descr": "Obtain or craft a Short-Circuit Sword",
@@ -1057,7 +1096,13 @@
       "advancements.cyber_dog_advancement.descr": "Create a Cyber Dog",
       "advancements.cyber_dog_advancement.title": "Cyber Dog",
       "advancements.scanner_advancement.title": "Scanner",
-      "advancements.scanner_advancement.descr": "Craft a Scanner"
+      "advancements.scanner_advancement.descr": "Craft a Scanner",
+      "item.choups_cyber_dogs.cyber_upgrade_9": "Cyber Dog Upgrade",
+      "item.choups_cyber_dogs.cyber_upgrade_9.description_2": " §7Activate the §9Slowness Module",
+      "item.choups_cyber_dogs.cyber_upgrade_9.description_3": "  §9Inflicts Slowness on hit",
+      "item.choups_cyber_dogs.cyber_upgrade_9.description_0": "",
+      "item.choups_cyber_dogs.cyber_upgrade_9.description_1": "§7When right cliked on a tamed Cyber Dog while sneaking:",
+      "item.choups_cyber_dogs.cyber_upgrade_9.description_4": ""
     }
   },
   "metadata": {

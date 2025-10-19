@@ -46,6 +46,13 @@ public class CyberDogRightClickedOnEntityProcedure {
 						}
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, (float) 1.5, (float) 1.2);
+							} else {
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, (float) 1.5, (float) 1.2, false);
+							}
+						}
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
 								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.blaze.burn")), SoundSource.NEUTRAL, 1, 1);
 							} else {
 								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.blaze.burn")), SoundSource.NEUTRAL, 1, 1, false);
@@ -55,6 +62,43 @@ public class CyberDogRightClickedOnEntityProcedure {
 							_level.sendParticles(ParticleTypes.FLAME, x, y, z, 15, 2, 1, 2, 0.25);
 						if (entity instanceof Player _player) {
 							ItemStack _stktoremove = new ItemStack(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE.get());
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
+					}
+				}
+				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ChoupsCyberDogsModItems.CYBER_UPGRADE_9.get()) {
+					if (entity.getPersistentData().getBoolean("SlownessModule") == true) {
+						if (sourceentity instanceof Player _player && !_player.level().isClientSide())
+							_player.displayClientMessage(Component.literal("Your Cyber Dog already has this upgrade."), true);
+					} else {
+						if (sourceentity instanceof LivingEntity _entity)
+							_entity.swing(InteractionHand.MAIN_HAND, true);
+						entity.getPersistentData().putBoolean("SlownessModule", true);
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.player.burp")), SoundSource.NEUTRAL, 1, (float) 0.8);
+							} else {
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.player.burp")), SoundSource.NEUTRAL, 1, (float) 0.8, false);
+							}
+						}
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, (float) 1.5, (float) 1.2);
+							} else {
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, (float) 1.5, (float) 1.2, false);
+							}
+						}
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.witch.throw")), SoundSource.NEUTRAL, 1, 1);
+							} else {
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.witch.throw")), SoundSource.NEUTRAL, 1, 1, false);
+							}
+						}
+						if (world instanceof ServerLevel _level)
+							_level.sendParticles(ParticleTypes.FIREWORK, x, y, z, 15, 2, 1, 2, 0.25);
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(ChoupsCyberDogsModItems.CYBER_UPGRADE_9.get());
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 						}
 					}
@@ -72,6 +116,13 @@ public class CyberDogRightClickedOnEntityProcedure {
 								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.player.burp")), SoundSource.NEUTRAL, 1, (float) 0.8);
 							} else {
 								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.player.burp")), SoundSource.NEUTRAL, 1, (float) 0.8, false);
+							}
+						}
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, (float) 1.5, (float) 1.2);
+							} else {
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, (float) 1.5, (float) 1.2, false);
 							}
 						}
 						if (world instanceof Level _level) {
@@ -106,6 +157,13 @@ public class CyberDogRightClickedOnEntityProcedure {
 						}
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, (float) 1.5, (float) 1.2);
+							} else {
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, (float) 1.5, (float) 1.2, false);
+							}
+						}
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
 								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.wither.spawn")), SoundSource.NEUTRAL, 1, (float) 1.2);
 							} else {
 								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.wither.spawn")), SoundSource.NEUTRAL, 1, (float) 1.2, false);
@@ -132,6 +190,13 @@ public class CyberDogRightClickedOnEntityProcedure {
 								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.player.burp")), SoundSource.NEUTRAL, 1, (float) 0.8);
 							} else {
 								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.player.burp")), SoundSource.NEUTRAL, 1, (float) 0.8, false);
+							}
+						}
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, (float) 1.5, (float) 1.2);
+							} else {
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, (float) 1.5, (float) 1.2, false);
 							}
 						}
 						if (world instanceof Level _level) {
@@ -166,13 +231,20 @@ public class CyberDogRightClickedOnEntityProcedure {
 						}
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, (float) 1.5, (float) 1.2);
+							} else {
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, (float) 1.5, (float) 1.2, false);
+							}
+						}
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
 								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.tnt.primed")), SoundSource.NEUTRAL, 1, (float) 0.8);
 							} else {
 								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.tnt.primed")), SoundSource.NEUTRAL, 1, (float) 0.8, false);
 							}
 						}
 						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.EXPLOSION_EMITTER, x, y, z, 15, 2, 1, 2, 0.25);
+							_level.sendParticles(ParticleTypes.FALLING_SPORE_BLOSSOM, x, y, z, 15, 2, 1, 2, 0.25);
 						if (entity instanceof Player _player) {
 							ItemStack _stktoremove = new ItemStack(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_5.get());
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
@@ -192,6 +264,13 @@ public class CyberDogRightClickedOnEntityProcedure {
 								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.player.burp")), SoundSource.NEUTRAL, 1, (float) 0.8);
 							} else {
 								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.player.burp")), SoundSource.NEUTRAL, 1, (float) 0.8, false);
+							}
+						}
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, (float) 1.5, (float) 1.2);
+							} else {
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, (float) 1.5, (float) 1.2, false);
 							}
 						}
 						if (world instanceof Level _level) {
@@ -226,6 +305,13 @@ public class CyberDogRightClickedOnEntityProcedure {
 						}
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, (float) 1.5, (float) 1.2);
+							} else {
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, (float) 1.5, (float) 1.2, false);
+							}
+						}
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
 								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.lightning_bolt.thunder")), SoundSource.NEUTRAL, 1, (float) 0.8);
 							} else {
 								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.lightning_bolt.thunder")), SoundSource.NEUTRAL, 1, (float) 0.8, false);
@@ -256,6 +342,13 @@ public class CyberDogRightClickedOnEntityProcedure {
 						}
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, (float) 1.5, (float) 1.2);
+							} else {
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, (float) 1.5, (float) 1.2, false);
+							}
+						}
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
 								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.witch.ambient")), SoundSource.NEUTRAL, 1, (float) 0.8);
 							} else {
 								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.witch.ambient")), SoundSource.NEUTRAL, 1, (float) 0.8, false);
@@ -272,6 +365,13 @@ public class CyberDogRightClickedOnEntityProcedure {
 				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.WOLF_ARMOR && entity.getPersistentData().getBoolean("ArmorEquipped") == false) {
 					entity.getPersistentData().putBoolean("ArmadilloArmor", true);
 					entity.getPersistentData().putBoolean("ArmorEquipped", true);
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, (float) 1.5, (float) 1.2);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, (float) 1.5, (float) 1.2, false);
+						}
+					}
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.armor.equip_iron")), SoundSource.NEUTRAL, 1, 1);
@@ -349,6 +449,10 @@ public class CyberDogRightClickedOnEntityProcedure {
 					if (entity.getPersistentData().getBoolean("WitherModule") == true) {
 						if (sourceentity instanceof Player _player && !_player.level().isClientSide())
 							_player.displayClientMessage(Component.literal("Wither Module"), false);
+					}
+					if (entity.getPersistentData().getBoolean("SlownessModule") == true) {
+						if (sourceentity instanceof Player _player && !_player.level().isClientSide())
+							_player.displayClientMessage(Component.literal("Slowness Module"), false);
 					}
 				}
 			}

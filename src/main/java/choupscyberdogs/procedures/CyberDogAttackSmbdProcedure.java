@@ -55,11 +55,15 @@ public class CyberDogAttackSmbdProcedure {
 				}
 				if (sourceentity.getPersistentData().getBoolean("ToxicModule") == true) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 100, 1, false, false));
+						_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 100, 1, true, true));
+				}
+				if (sourceentity.getPersistentData().getBoolean("SlownessModule") == true) {
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 0, false, true));
 				}
 				if (sourceentity.getPersistentData().getBoolean("WitherModule") == true) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 100, 1, false, false));
+						_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 100, 1, false, true));
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.SMOKE, x, y, z, 5, 1, 1, 1, 0.2);
 				}

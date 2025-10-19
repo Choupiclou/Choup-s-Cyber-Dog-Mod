@@ -16,6 +16,7 @@ import choupscyberdogs.item.ShortCircuitPickaxeItem;
 import choupscyberdogs.item.ShortCircuitHoeItem;
 import choupscyberdogs.item.ShortCircuitAxeItem;
 import choupscyberdogs.item.ScannerItem;
+import choupscyberdogs.item.CyberUpgrade9Item;
 import choupscyberdogs.item.CyberUpgrade8Item;
 import choupscyberdogs.item.CyberDogUpgradeItem;
 import choupscyberdogs.item.CyberDogUpgrade7Item;
@@ -45,6 +46,7 @@ public class ChoupsCyberDogsModItems {
 	public static final DeferredItem<Item> SHORT_CIRCUIT_AXE = REGISTRY.register("short_circuit_axe", ShortCircuitAxeItem::new);
 	public static final DeferredItem<Item> SHORT_CIRCUIT_SHOVEL = REGISTRY.register("short_circuit_shovel", ShortCircuitShovelItem::new);
 	public static final DeferredItem<Item> SHORT_CIRCUIT_HOE = REGISTRY.register("short_circuit_hoe", ShortCircuitHoeItem::new);
+	public static final DeferredItem<Item> CYBER_UPGRADE_9 = REGISTRY.register("cyber_upgrade_9", CyberUpgrade9Item::new);
 	// Start of user code block custom items
 	// End of user code block custom items
 }

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "choups_cyber_dogs:short_circuit_axe",
+    "choups_cyber_dogs:short_circuit_hoe",
+    "choups_cyber_dogs:short_circuit_pickaxe",
+    "choups_cyber_dogs:short_circuit_sword",
+    "choups_cyber_dogs:short_circuit_shovel"
+  ]
+}

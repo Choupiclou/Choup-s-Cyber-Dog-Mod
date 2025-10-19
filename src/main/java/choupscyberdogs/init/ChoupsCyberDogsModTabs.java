@@ -25,13 +25,14 @@ public class ChoupsCyberDogsModTabs {
 				tabData.accept(ChoupsCyberDogsModItems.SHORT_CIRCUIT_HOE.get());
 				tabData.accept(ChoupsCyberDogsModItems.SCANNER.get());
 				tabData.accept(ChoupsCyberDogsModItems.STRANGE_CIRCUIT.get());
-				tabData.accept(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE.get());
 				tabData.accept(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_2.get());
-				tabData.accept(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_3.get());
-				tabData.accept(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_4.get());
-				tabData.accept(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_5.get());
+				tabData.accept(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE.get());
+				tabData.accept(ChoupsCyberDogsModItems.CYBER_UPGRADE_9.get());
 				tabData.accept(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_6.get());
 				tabData.accept(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_7.get());
+				tabData.accept(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_4.get());
 				tabData.accept(ChoupsCyberDogsModItems.CYBER_UPGRADE_8.get());
+				tabData.accept(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_3.get());
+				tabData.accept(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_5.get());
 			}).build());
 }

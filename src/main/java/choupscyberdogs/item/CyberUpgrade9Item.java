@@ -11,8 +11,8 @@ import net.minecraft.network.chat.Component;
 
 import java.util.List;
 
-public class CyberUpgrade8Item extends Item {
-	public CyberUpgrade8Item() {
+public class CyberUpgrade9Item extends Item {
+	public CyberUpgrade9Item() {
 		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.RARE));
 	}
 
@@ -22,8 +22,8 @@ public class CyberUpgrade8Item extends Item {
 		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.literal(""));
 		list.add(Component.literal("\u00A77When right cliked on a tamed Cyber Dog while sneaking:"));
-		list.add(Component.literal(" \u00A77Activate the \u00A79Vampire Module"));
-		list.add(Component.literal(" \u00A7925% chance of drain the life of touched entities"));
+		list.add(Component.literal(" \u00A77Activate the \u00A79Slowness Module"));
+		list.add(Component.literal(" \u00A79Inflicts Slowness on hit"));
 		list.add(Component.literal(""));
 	}
 }
