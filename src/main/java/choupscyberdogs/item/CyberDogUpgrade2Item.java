@@ -21,7 +21,7 @@ public class CyberDogUpgrade2Item extends Item {
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.literal(""));
-		list.add(Component.literal("\u00A77When right cliked on a tamed Cyber Dog while sneaking:"));
+		list.add(Component.literal("\u00A77When right clicked on a tamed Cyber Dog while sneaking:"));
 		list.add(Component.literal(" \u00A77Activate the \u00A79Speed Module:"));
 		list.add(Component.literal(" \u00A79+15% Speed"));
 		list.add(Component.literal(""));

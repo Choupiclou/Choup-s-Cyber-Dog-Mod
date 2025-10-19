@@ -21,7 +21,7 @@ public class CyberUpgrade8Item extends Item {
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.literal(""));
-		list.add(Component.literal("\u00A77When right cliked on a tamed Cyber Dog while sneaking:"));
+		list.add(Component.literal("\u00A77When right clicked on a tamed Cyber Dog while sneaking:"));
 		list.add(Component.literal(" \u00A77Activate the \u00A79Vampire Module"));
 		list.add(Component.literal(" \u00A7925% chance of drain the life of touched entities"));
 		list.add(Component.literal(""));
