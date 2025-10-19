@@ -7,6 +7,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.TamableAnimal;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
@@ -449,6 +450,8 @@ public class CyberDogRightClickedOnEntityProcedure {
 						_player.displayClientMessage(Component.literal("Your Cyber Dog is following you."), true);
 				}
 				if (entity.getPersistentData().getBoolean("idle") == true) {
+					if (entity instanceof Mob _entity)
+						_entity.setTarget(null);
 					if (sourceentity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal("Your Cyber Dog is staying here."), true);
 				}
