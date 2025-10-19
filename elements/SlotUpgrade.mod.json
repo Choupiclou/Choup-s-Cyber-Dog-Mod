@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "health_circuit",
+    "texture": "slot_upgrade",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
-    "name": "Cyber Dog Upgrade",
+    "name": "Slot Upgrade",
     "rarity": "RARE",
     "creativeTabs": [
       {
@@ -32,9 +32,9 @@
     "specialInformation": {
       "fixedValue": [
         "",
-        "§7When right clicked on a tamed Cyber Dog while sneaking:",
-        " §7Activates the §9Health Module:",
-        "  §9+10 Hearts",
+        "§7When right clicked on a Cyber Dog:",
+        " §9Increases the Cyber Dog slot capacity",
+        " §9Max = 5!",
         ""
       ]
     },

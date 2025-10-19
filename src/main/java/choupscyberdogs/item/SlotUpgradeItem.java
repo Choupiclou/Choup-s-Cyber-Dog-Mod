@@ -11,8 +11,8 @@ import net.minecraft.network.chat.Component;
 
 import java.util.List;
 
-public class CyberDogUpgrade3Item extends Item {
-	public CyberDogUpgrade3Item() {
+public class SlotUpgradeItem extends Item {
+	public SlotUpgradeItem() {
 		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.RARE));
 	}
 
@@ -21,9 +21,9 @@ public class CyberDogUpgrade3Item extends Item {
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.literal(""));
-		list.add(Component.literal("\u00A77When right clicked on a tamed Cyber Dog while sneaking:"));
-		list.add(Component.literal(" \u00A77Activates the \u00A79Lightning Module:"));
-		list.add(Component.literal(" \u00A7925% chance of striking a lightning on hit"));
+		list.add(Component.literal("\u00A77When right clicked on a Cyber Dog:"));
+		list.add(Component.literal(" \u00A79Increases the Cyber Dog slot capacity"));
+		list.add(Component.literal(" \u00A79Max = 5!"));
 		list.add(Component.literal(""));
 	}
 }

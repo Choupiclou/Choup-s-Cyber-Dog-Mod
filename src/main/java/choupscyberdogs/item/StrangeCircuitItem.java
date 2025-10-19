@@ -22,7 +22,7 @@ public class StrangeCircuitItem extends Item {
 		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.literal(""));
 		list.add(Component.literal("\u00A77When right clicked on a wild Wolf:"));
-		list.add(Component.literal(" \u00A77Have a chance of transforming it into a \u00A7eCyber Dog\u00A77!"));
+		list.add(Component.literal(" \u00A77Has a chance of transforming it into a \u00A7eCyber Dog\u00A77!"));
 		list.add(Component.literal(" \u00A77Tamed with \u00A79Redstone"));
 		list.add(Component.literal(""));
 	}

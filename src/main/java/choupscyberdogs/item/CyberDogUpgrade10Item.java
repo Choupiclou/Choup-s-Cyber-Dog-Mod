@@ -22,7 +22,7 @@ public class CyberDogUpgrade10Item extends Item {
 		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.literal(""));
 		list.add(Component.literal("\u00A77When right clicked on a tamed Cyber Dog while sneaking:"));
-		list.add(Component.literal(" \u00A77Activate the \u00A79Strenght Module:"));
+		list.add(Component.literal(" \u00A77Activates the \u00A79Strenght Module:"));
 		list.add(Component.literal(" \u00A79+4 Attack Damages"));
 		list.add(Component.literal(""));
 	}

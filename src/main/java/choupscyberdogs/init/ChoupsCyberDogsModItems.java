@@ -10,6 +10,7 @@ import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.minecraft.world.item.Item;
 
 import choupscyberdogs.item.StrangeCircuitItem;
+import choupscyberdogs.item.SlotUpgradeItem;
 import choupscyberdogs.item.ShortCircuitSwordItem;
 import choupscyberdogs.item.ShortCircuitShovelItem;
 import choupscyberdogs.item.ShortCircuitPickaxeItem;
@@ -49,6 +50,7 @@ public class ChoupsCyberDogsModItems {
 	public static final DeferredItem<Item> SHORT_CIRCUIT_HOE = REGISTRY.register("short_circuit_hoe", ShortCircuitHoeItem::new);
 	public static final DeferredItem<Item> CYBER_UPGRADE_9 = REGISTRY.register("cyber_upgrade_9", CyberUpgrade9Item::new);
 	public static final DeferredItem<Item> CYBER_DOG_UPGRADE_10 = REGISTRY.register("cyber_dog_upgrade_10", CyberDogUpgrade10Item::new);
+	public static final DeferredItem<Item> SLOT_UPGRADE = REGISTRY.register("slot_upgrade", SlotUpgradeItem::new);
 	// Start of user code block custom items
 	// End of user code block custom items
 }
