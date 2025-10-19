@@ -409,7 +409,7 @@ public class CyberDogRightClickedOnEntityProcedure {
 				entity.getPersistentData().putBoolean("idle", (!entity.getPersistentData().getBoolean("idle")));
 				if (entity.getPersistentData().getBoolean("idle") == false) {
 					if (sourceentity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("Your Cyber Dog his following you."), true);
+						_player.displayClientMessage(Component.literal("Your Cyber Dog is following you."), true);
 				}
 				if (entity.getPersistentData().getBoolean("idle") == true) {
 					if (sourceentity instanceof Player _player && !_player.level().isClientSide())
