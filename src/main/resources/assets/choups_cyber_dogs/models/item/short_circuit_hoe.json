@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "choups_cyber_dogs:item/circuited_hoe"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 79,
+  "_type": "tab",
+  "definition": {
+    "name": "Choup's Cyber Dog",
+    "icon": {
+      "value": "CUSTOM:CyberDog01.spawn_egg"
+    },
+    "showSearch": false
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "choups_cyber_dogs:scanner"
+    },
+    "title": {
+      "translate": "advancements.scanner_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.scanner_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "scanner_advancement_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "choups_cyber_dogs:scanner"
+            ],
+            "count": {
+              "min": 1,
+              "max": 999
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "choups_cyber_dogs:strange_circuit_advancement"
+}

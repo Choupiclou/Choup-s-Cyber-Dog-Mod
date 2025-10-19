@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:breeze_rod"
+    },
+    "b": {
+      "item": "minecraft:feather"
+    },
+    "c": {
+      "item": "choups_cyber_dogs:strange_circuit"
+    }
+  },
+  "result": {
+    "id": "choups_cyber_dogs:cyber_dog_upgrade_2",
+    "count": 1
+  }
+}

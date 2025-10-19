@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "choups_cyber_dogs:short_circuit_hoe"
+    },
+    "title": {
+      "translate": "advancements.short_circuit_hoe_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.short_circuit_hoe_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "short_circuit_hoe_advancement_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "choups_cyber_dogs:short_circuit_hoe"
+            ],
+            "count": {
+              "min": 1,
+              "max": 999
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "choups_cyber_dogs:strange_circuit_advancement"
+}

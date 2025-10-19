@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "id": "choups_cyber_dogs:cyber_dog_01_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.choups_cyber_dogs.title"
+    },
+    "description": {
+      "translate": "advancements.choups_cyber_dogs.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "choups_cyber_dogs_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

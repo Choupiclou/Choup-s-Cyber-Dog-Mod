@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "choups_cyber_dogs:cyber_dog_01_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.cyber_dog_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.cyber_dog_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cyber_dog_advancement_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "choups_cyber_dogs:choups_cyber_dogs"
+}

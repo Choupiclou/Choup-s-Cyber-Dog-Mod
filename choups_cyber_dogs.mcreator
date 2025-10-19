@@ -1,0 +1,1106 @@
+{
+  "mod_elements": [
+    {
+      "name": "CyberDogCreativeTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_creative_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "CyberDogRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/choupscyberdogs/procedures/CyberDogRightClickedOnEntityProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogEntityDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/choupscyberdogs/procedures/CyberDogEntityDiesProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "StrangeCircuit",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strange_circuit",
+      "metadata": {
+        "files": [
+          "src/main/java/choupscyberdogs/item/StrangeCircuitItem.java",
+          "src/main/resources/assets/choups_cyber_dogs/models/item/strange_circuit.json"
+        ]
+      }
+    },
+    {
+      "name": "StrangeCircuitRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strange_circuit_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/recipe/strange_circuit_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RightClickOnDog",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "right_click_on_dog",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/choupscyberdogs/procedures/RightClickOnDogProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/choupscyberdogs/procedures/CyberDogOnEntityTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogAttackSmbd",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_attack_smbd",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/choupscyberdogs/procedures/CyberDogAttackSmbdProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/choupscyberdogs/procedures/CyberDogOnInitialEntitySpawnProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ChoupsCyberDog",
+      "type": "config",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "choups_cyber_dog",
+      "metadata": {
+        "files": [
+          "src/main/java/choupscyberdogs/configuration/ChoupsCyberDogConfiguration.java"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogUpgrade",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/choups_cyber_dogs/models/item/cyber_dog_upgrade.json",
+          "src/main/java/choupscyberdogs/item/CyberDogUpgradeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CyberDog01",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_01",
+      "metadata": {
+        "files": [
+          "src/main/java/choupscyberdogs/entity/CyberDog01Entity.java",
+          "src/main/java/choupscyberdogs/entity/model/CyberDog01Model.java",
+          "src/main/java/choupscyberdogs/client/renderer/CyberDog01Renderer.java",
+          "src/main/resources/assets/choups_cyber_dogs/models/item/cyber_dog_01_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogUpgradeFieryRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_upgrade_fiery_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/recipe/cyber_dog_upgrade_fiery_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogUpgrade2",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_upgrade_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/choups_cyber_dogs/models/item/cyber_dog_upgrade_2.json",
+          "src/main/java/choupscyberdogs/item/CyberDogUpgrade2Item.java"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogTPCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_tp_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/choupscyberdogs/procedures/CyberDogTPConditionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogUpgradeSpeedRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_upgrade_speed_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/recipe/cyber_dog_upgrade_speed_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogUpgrade3",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_upgrade_3",
+      "metadata": {
+        "files": [
+          "src/main/java/choupscyberdogs/item/CyberDogUpgrade3Item.java",
+          "src/main/resources/assets/choups_cyber_dogs/models/item/cyber_dog_upgrade_3.json"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogUpgradeLighningRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_upgrade_lighning_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/recipe/cyber_dog_upgrade_lighning_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogUpgrade4",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_upgrade_4",
+      "metadata": {
+        "files": [
+          "src/main/java/choupscyberdogs/item/CyberDogUpgrade4Item.java",
+          "src/main/resources/assets/choups_cyber_dogs/models/item/cyber_dog_upgrade_4.json"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogUpgradeHealthRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_upgrade_health_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/recipe/cyber_dog_upgrade_health_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogUpgrade5",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_upgrade_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/choups_cyber_dogs/models/item/cyber_dog_upgrade_5.json",
+          "src/main/java/choupscyberdogs/item/CyberDogUpgrade5Item.java"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogUpgradeNukeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_upgrade_nuke_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/recipe/cyber_dog_upgrade_nuke_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogUpgrade6",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_upgrade_6",
+      "metadata": {
+        "files": [
+          "src/main/java/choupscyberdogs/item/CyberDogUpgrade6Item.java",
+          "src/main/resources/assets/choups_cyber_dogs/models/item/cyber_dog_upgrade_6.json"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogUpgradeToxicRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_upgrade_toxic_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/recipe/cyber_dog_upgrade_toxic_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogUpgrade7",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_upgrade_7",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/choups_cyber_dogs/models/item/cyber_dog_upgrade_7.json",
+          "src/main/java/choupscyberdogs/item/CyberDogUpgrade7Item.java"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogUpgradeWitherRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_upgrade_wither_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/recipe/cyber_dog_upgrade_wither_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CyberUpgrade8",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_upgrade_8",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/choups_cyber_dogs/models/item/cyber_upgrade_8.json",
+          "src/main/java/choupscyberdogs/item/CyberUpgrade8Item.java"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogUpgradeVampireRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_upgrade_vampire_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/recipe/cyber_dog_upgrade_vampire_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Scanner",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scanner",
+      "metadata": {
+        "files": [
+          "src/main/java/choupscyberdogs/item/ScannerItem.java",
+          "src/main/resources/assets/choups_cyber_dogs/models/item/scanner.json"
+        ]
+      }
+    },
+    {
+      "name": "ScannerRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scanner_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/recipe/scanner_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ForbiddenLaboratory",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forbidden_laboratory",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/worldgen/structure_set/forbidden_laboratory.json",
+          "src/main/resources/data/choups_cyber_dogs/worldgen/structure/forbidden_laboratory.json",
+          "src/main/resources/data/choups_cyber_dogs/worldgen/template_pool/forbidden_laboratory.json"
+        ]
+      }
+    },
+    {
+      "name": "ForbiddenLaboratoryLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forbidden_laboratory_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/loot_table/chests/forbidden_laboratory.json"
+        ]
+      }
+    },
+    {
+      "name": "ShortCircuitSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "short_circuit_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/choupscyberdogs/item/ShortCircuitSwordItem.java",
+          "src/main/resources/assets/choups_cyber_dogs/models/item/short_circuit_sword.json"
+        ]
+      }
+    },
+    {
+      "name": "ShortCircuitSwordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "short_circuit_sword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/choupscyberdogs/procedures/ShortCircuitSwordLivingEntityIsHitWithToolProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ShortCircuitSwordRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "short_circuit_sword_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/choupscyberdogs/procedures/ShortCircuitSwordRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ShortCircuitPickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "short_circuit_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/choupscyberdogs/item/ShortCircuitPickaxeItem.java",
+          "src/main/resources/assets/choups_cyber_dogs/models/item/short_circuit_pickaxe.json"
+        ]
+      }
+    },
+    {
+      "name": "ShortCircuitAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "short_circuit_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/choups_cyber_dogs/models/item/short_circuit_axe.json",
+          "src/main/java/choupscyberdogs/item/ShortCircuitAxeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ShortCircuitShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "short_circuit_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/choups_cyber_dogs/models/item/short_circuit_shovel.json",
+          "src/main/java/choupscyberdogs/item/ShortCircuitShovelItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ShortCircuitHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "short_circuit_hoe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/choups_cyber_dogs/models/item/short_circuit_hoe.json",
+          "src/main/java/choupscyberdogs/item/ShortCircuitHoeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ShortCircuitSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "short_circuit_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/recipe/short_circuit_sword_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ShortCircuitPickaxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "short_circuit_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/recipe/short_circuit_pickaxe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ShortCircuitAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "short_circuit_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/recipe/short_circuit_axe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ShortCircuitShovelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "short_circuit_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/recipe/short_circuit_shovel_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ShortCircuitPickaxeHoe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "short_circuit_pickaxe_hoe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/recipe/short_circuit_pickaxe_hoe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChoupsCyberDogs",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "choups_cyber_dogs",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/advancement/choups_cyber_dogs.json"
+        ]
+      }
+    },
+    {
+      "name": "CCDAdvancement",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ccd_advancement",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/choupscyberdogs/procedures/CCDAdvancementProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "StrangeCircuitAdvancement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strange_circuit_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/advancement/strange_circuit_advancement.json"
+        ]
+      }
+    },
+    {
+      "name": "ShortCircuitSwordAdvancement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "short_circuit_sword_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/advancement/short_circuit_sword_advancement.json"
+        ]
+      }
+    },
+    {
+      "name": "ShortCircuitPickaxeAdvancement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "short_circuit_pickaxe_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/advancement/short_circuit_pickaxe_advancement.json"
+        ]
+      }
+    },
+    {
+      "name": "ShortCircuitAxeAdvancement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "short_circuit_axe_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/advancement/short_circuit_axe_advancement.json"
+        ]
+      }
+    },
+    {
+      "name": "ShortCircuitShovelAdvancement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "short_circuit_shovel_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/advancement/short_circuit_shovel_advancement.json"
+        ]
+      }
+    },
+    {
+      "name": "ShortCircuitHoeAdvancement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "short_circuit_hoe_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/advancement/short_circuit_hoe_advancement.json"
+        ]
+      }
+    },
+    {
+      "name": "ForbiddenLaboratoryAdvancement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "forbidden_laboratory_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/advancement/forbidden_laboratory_advancement.json"
+        ]
+      }
+    },
+    {
+      "name": "CyberDogAdvancement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_dog_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/advancement/cyber_dog_advancement.json"
+        ]
+      }
+    },
+    {
+      "name": "ScannerAdvancement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scanner_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/advancement/scanner_advancement.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "cyberdogambient",
+      "files": [
+        "cyberdogbark"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "cyberdogdeath",
+      "files": [
+        "cyberdogdeath"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "cyberdoghurt",
+      "files": [
+        "cyberdoghurt"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "electric_shock",
+      "files": [
+        "electric-shock-334777"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
+  "tag_elements": {
+    "ITEMS:mod:modules": [
+      "CUSTOM:StrangeCircuit",
+      "CUSTOM:CyberDogUpgrade",
+      "CUSTOM:CyberDogUpgrade2",
+      "CUSTOM:CyberDogUpgrade3",
+      "CUSTOM:CyberDogUpgrade4",
+      "CUSTOM:CyberDogUpgrade5"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:ShortCircuitSword"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:ShortCircuitPickaxe"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:ShortCircuitAxe"
+    ],
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:ShortCircuitShovel"
+    ],
+    "ITEMS:minecraft:hoes": [
+      "~CUSTOM:ShortCircuitHoe"
+    ]
+  },
+  "tab_element_order": {
+    "CUSTOM:CyberDogCreativeTab": [
+      "CyberDog01",
+      "ShortCircuitSword",
+      "ShortCircuitPickaxe",
+      "ShortCircuitAxe",
+      "ShortCircuitShovel",
+      "ShortCircuitHoe",
+      "Scanner",
+      "StrangeCircuit",
+      "CyberDogUpgrade",
+      "CyberDogUpgrade2",
+      "CyberDogUpgrade3",
+      "CyberDogUpgrade4",
+      "CyberDogUpgrade5",
+      "CyberDogUpgrade6",
+      "CyberDogUpgrade7",
+      "CyberUpgrade8"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "item_group.choups_cyber_dogs.cyber_dog_creative_tab": "Choup\u0027s Cyber Dog",
+      "item.choups_cyber_dogs.strange_circuit": "§eStrange Circuit",
+      "item.choups_cyber_dogs.strange_circuit.description_0": "",
+      "item.choups_cyber_dogs.strange_circuit.description_1": "§7When right clicked on a wild Wolf:",
+      "item.choups_cyber_dogs.strange_circuit.description_2": " §7Have a chance of transforming it into a §eCyber Dog§7!",
+      "item.choups_cyber_dogs.strange_circuit.description_3": " §7Tamed with §9Redstone",
+      "subtitles.cyberdogambient": "",
+      "subtitles.cyberdogdeath": "",
+      "subtitles.cyberdoghurt": "",
+      "item.choups_cyber_dogs.strange_circuit.description_4": "",
+      "item.choups_cyber_dogs.cyber_dog_upgrade.description_3": "  §9Inflicts fire on hit",
+      "item.choups_cyber_dogs.cyber_dog_upgrade.description_1": "§7When right cliked on a tamed Cyber Dog while sneaking:",
+      "item.choups_cyber_dogs.cyber_dog_upgrade.description_2": " §7Activate the §9Fiery Module",
+      "item.choups_cyber_dogs.cyber_dog_upgrade": "Cyber Dog Upgrade",
+      "item.choups_cyber_dogs.cyber_dog_upgrade.description_0": "",
+      "item.choups_cyber_dogs.cyber_dog_01_spawn_egg": "Cyber Dog Spawn Egg",
+      "entity.choups_cyber_dogs.cyber_dog_01": "Cyber Dog",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_2.description_3": "  §9+15% Speed",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_2.description_2": " §7Activate the §9Speed Module:",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_2.description_1": "§7When right cliked on a tamed Cyber Dog while sneaking:",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_2.description_0": "",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_2": "Cyber Dog Upgrade",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_3.description_0": "",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_3.description_1": "§7When right cliked on a tamed Cyber Dog while sneaking:",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_3.description_2": " §7Activate the §9Lighning Module:",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_3.description_3": "  §925% chance of striking a lightning on hit",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_3": "Cyber Dog Upgrade",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_3.description_4": "",
+      "item.choups_cyber_dogs.cyber_dog_upgrade.description_4": "",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_2.description_4": "",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_4.description_4": "",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_4": "Cyber Dog Upgrade",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_4.description_0": "",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_4.description_1": "§7When right cliked on a tamed Cyber Dog while sneaking:",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_4.description_2": " §7Activate the §9Health Module:",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_4.description_3": "  §9+10 Hearts",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_5.description_2": " §7Activate the §9NUKE Module:",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_5.description_1": "§7When right cliked on a tamed Cyber Dog while sneaking:",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_5.description_0": "",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_5": "Cyber Dog Upgrade",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_5.description_4": "  §cDANGEROUS!",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_5.description_3": "  §9Upon death, the Cyber Dog will destroy everything.",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_6.description_1": "§7When right cliked on a tamed Cyber Dog while sneaking:",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_6.description_0": "",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_6.description_4": "",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_6": "Cyber Dog Upgrade",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_6.description_3": "  §9Inflicts Poison on hit",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_6.description_2": " §7Activate the §9Toxic Module",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_7.description_3": "  §9Inflicts Wither on hit",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_7": "Cyber Dog Upgrade",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_7.description_4": "",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_7.description_1": "§7When right cliked on a tamed Cyber Dog while sneaking:",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_7.description_2": " §7Activate the §9Wither Module",
+      "item.choups_cyber_dogs.cyber_dog_upgrade_7.description_0": "",
+      "item.choups_cyber_dogs.cyber_upgrade_8.description_3": "  §925% chance of drain the life of touched entities",
+      "item.choups_cyber_dogs.cyber_upgrade_8.description_4": "",
+      "item.choups_cyber_dogs.cyber_upgrade_8.description_1": "§7When right cliked on a tamed Cyber Dog while sneaking:",
+      "item.choups_cyber_dogs.cyber_upgrade_8": "Cyber Dog Upgrade",
+      "item.choups_cyber_dogs.cyber_upgrade_8.description_2": " §7Activate the §9VampireModule",
+      "item.choups_cyber_dogs.cyber_upgrade_8.description_0": "",
+      "item.choups_cyber_dogs.scanner.description_2": " §9Displays all installed modules!",
+      "item.choups_cyber_dogs.scanner.description_3": "",
+      "item.choups_cyber_dogs.scanner.description_0": "",
+      "item.choups_cyber_dogs.scanner.description_1": "§7When right clicked on your Cyber Dog:",
+      "item.choups_cyber_dogs.scanner": "§aScanner",
+      "item.choups_cyber_dogs.short_circuit_sword": "§aShort-Circuit Sword",
+      "item.choups_cyber_dogs.short_circuit_sword.description_8": "",
+      "item.choups_cyber_dogs.short_circuit_sword.description_5": "§7When right clicked:",
+      "item.choups_cyber_dogs.short_circuit_sword.description_4": "",
+      "item.choups_cyber_dogs.short_circuit_sword.description_7": " §7Gains a small amount of durability",
+      "item.choups_cyber_dogs.short_circuit_sword.description_6": " §e[Self-Repair]",
+      "item.choups_cyber_dogs.short_circuit_sword.description_1": "§7When an entity is hit:",
+      "item.choups_cyber_dogs.short_circuit_sword.description_0": "",
+      "item.choups_cyber_dogs.short_circuit_sword.description_3": " §7Has a chance to strike down a lighting and slow your enemies.",
+      "item.choups_cyber_dogs.short_circuit_sword.description_2": " §e[Short-Circuit]",
+      "subtitles.electric_shock": "",
+      "item.choups_cyber_dogs.short_circuit_pickaxe.description_8": "",
+      "item.choups_cyber_dogs.short_circuit_pickaxe.description_1": "§7When an entity is hit:",
+      "item.choups_cyber_dogs.short_circuit_pickaxe.description_0": "",
+      "item.choups_cyber_dogs.short_circuit_pickaxe.description_3": " §7Has a chance to strike down a lighting and slow your enemies.",
+      "item.choups_cyber_dogs.short_circuit_pickaxe.description_2": " §e[Short-Circuit]",
+      "item.choups_cyber_dogs.short_circuit_pickaxe.description_5": "§7When right clicked:",
+      "item.choups_cyber_dogs.short_circuit_pickaxe": "§aShort-Circuit Pickaxe",
+      "item.choups_cyber_dogs.short_circuit_pickaxe.description_4": "",
+      "item.choups_cyber_dogs.short_circuit_pickaxe.description_7": " §7Gains a small amount of durability",
+      "item.choups_cyber_dogs.short_circuit_pickaxe.description_6": " §e[Self-Repair]",
+      "item.choups_cyber_dogs.short_circuit_axe.description_0": "",
+      "item.choups_cyber_dogs.short_circuit_axe.description_1": "§7When an entity is hit:",
+      "item.choups_cyber_dogs.short_circuit_axe.description_2": " §e[Short-Circuit]",
+      "item.choups_cyber_dogs.short_circuit_axe.description_3": " §7Has a chance to strike down a lighting and slow your enemies.",
+      "item.choups_cyber_dogs.short_circuit_axe.description_4": "",
+      "item.choups_cyber_dogs.short_circuit_axe.description_5": "§7When right clicked:",
+      "item.choups_cyber_dogs.short_circuit_axe.description_6": " §e[Self-Repair]",
+      "item.choups_cyber_dogs.short_circuit_axe.description_7": " §7Gains a small amount of durability",
+      "item.choups_cyber_dogs.short_circuit_axe.description_8": "",
+      "item.choups_cyber_dogs.short_circuit_axe": "§aShort-Circuit Axe",
+      "item.choups_cyber_dogs.short_circuit_shovel.description_2": " §e[Short-Circuit]",
+      "item.choups_cyber_dogs.short_circuit_shovel.description_3": " §7Has a chance to strike down a lighting and slow your enemies.",
+      "item.choups_cyber_dogs.short_circuit_shovel.description_4": "",
+      "item.choups_cyber_dogs.short_circuit_shovel.description_5": "§7When right clicked:",
+      "item.choups_cyber_dogs.short_circuit_shovel.description_6": " §e[Self-Repair]",
+      "item.choups_cyber_dogs.short_circuit_shovel.description_7": " §7Gains a small amount of durability",
+      "item.choups_cyber_dogs.short_circuit_shovel.description_8": "",
+      "item.choups_cyber_dogs.short_circuit_shovel.description_0": "",
+      "item.choups_cyber_dogs.short_circuit_shovel": "§aShort-Circuit Shovel",
+      "item.choups_cyber_dogs.short_circuit_shovel.description_1": "§7When an entity is hit:",
+      "item.choups_cyber_dogs.short_circuit_hoe.description_3": " §7Has a chance to strike down a lighting and slow your enemies.",
+      "item.choups_cyber_dogs.short_circuit_hoe.description_4": "",
+      "item.choups_cyber_dogs.short_circuit_hoe.description_5": "§7When right clicked:",
+      "item.choups_cyber_dogs.short_circuit_hoe.description_6": " §e[Self-Repair]",
+      "item.choups_cyber_dogs.short_circuit_hoe.description_0": "",
+      "item.choups_cyber_dogs.short_circuit_hoe.description_1": "§7When an entity is hit:",
+      "item.choups_cyber_dogs.short_circuit_hoe.description_2": " §e[Short-Circuit]",
+      "item.choups_cyber_dogs.short_circuit_hoe.description_7": " §7Gains a small amount of durability",
+      "item.choups_cyber_dogs.short_circuit_hoe.description_8": "",
+      "item.choups_cyber_dogs.short_circuit_hoe": "§aShort-Circuit Hoe",
+      "advancements.choups_cyber_dogs.descr": "Join the world with Choup\u0027s Cyber Dogs installed!",
+      "advancements.choups_cyber_dogs.title": "Choup\u0027s Cyber Dogs",
+      "advancements.strange_circuit_advancement.title": "Strange Circuit",
+      "advancements.strange_circuit_advancement.descr": "Obtain or craft a Strange Circuit",
+      "advancements.short_circuit_sword_advancement.descr": "Obtain or craft a Short-Circuit Sword",
+      "advancements.short_circuit_sword_advancement.title": "Short-Circuit Sword",
+      "advancements.short_circuit_pickaxe_advancement.title": "Short-Circuit Pickaxe",
+      "advancements.short_circuit_pickaxe_advancement.descr": "Obtain or craft a Short-Circuit Pickaxe",
+      "advancements.short_circuit_axe_advancement.descr": "Obtain or craft a Short-Circuit Axe",
+      "advancements.short_circuit_axe_advancement.title": "Short-Circuit Axe",
+      "advancements.short_circuit_shovel_advancement.title": "Short-Circuit Shovel",
+      "advancements.short_circuit_shovel_advancement.descr": "Obtain or craft a Short-Circuit Shovel",
+      "advancements.short_circuit_hoe_advancement.title": "Short-Circuit Hoe",
+      "advancements.short_circuit_hoe_advancement.descr": "Obtain or craft a Short-Circuit Hoe",
+      "advancements.forbidden_laboratory_advancement.title": "Forbidden Laboratory",
+      "advancements.forbidden_laboratory_advancement.descr": "Enter a Forbidden Laboratory",
+      "advancements.cyber_dog_advancement.descr": "Create a Cyber Dog",
+      "advancements.cyber_dog_advancement.title": "Cyber Dog",
+      "advancements.scanner_advancement.title": "Scanner",
+      "advancements.scanner_advancement.descr": "Craft a Scanner"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/resources/assets/choups_cyber_dogs/sounds.json",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/choupscyberdogs/init/ChoupsCyberDogsModTabs.java",
+      "src/main/resources/mixins.choups_cyber_dogs.json",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/choupscyberdogs/ChoupsCyberDogsMod.java",
+      "src/main/java/choupscyberdogs/init/ChoupsCyberDogsModSounds.java",
+      "src/main/java/choupscyberdogs/init/EntityAnimationFactory.java",
+      "src/main/java/choupscyberdogs/init/ChoupsCyberDogsModConfigs.java",
+      "src/main/java/choupscyberdogs/init/ChoupsCyberDogsModBrewingRecipes.java",
+      "src/main/java/choupscyberdogs/init/ChoupsCyberDogsModItems.java",
+      "src/main/java/choupscyberdogs/init/ChoupsCyberDogsModEntityRenderers.java",
+      "src/main/java/choupscyberdogs/init/ChoupsCyberDogsModEntities.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "choups_cyber_dogs",
+    "modName": "Choup\u0027s Cyber Dogs",
+    "version": "1.0.0",
+    "author": "choup, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "All Rights Reserved",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "curios_api",
+      "geckolib",
+      "playeranimator",
+      "jei"
+    ],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created by choup !",
+    "modElementsPackage": "choupscyberdogs"
+  },
+  "mcreatorVersion": 202500228610
+}

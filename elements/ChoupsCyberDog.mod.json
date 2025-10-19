@@ -1,0 +1,10 @@
+{
+  "_fv": 79,
+  "_type": "config",
+  "definition": {
+    "file": "choups_cyber_dog",
+    "configType": 0,
+    "config": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"config_category\" x=\"207\" y=\"33\"><field name=\"name\">Particles</field><statement name=\"write\"><block type=\"config_variable\"><field name=\"name\">particles_active</field><field name=\"comment\">When true the particles will be shown for the Cyber Dog, for instance when he eats a lava bucket. Default = true</field><value name=\"value\"><block type=\"config_logic_variable\"><field name=\"name\">particles_active</field><field name=\"value\">true</field></block></value></block></statement></block><block type=\"config_logic_variable\" x=\"285\" y=\"145\"><field name=\"name\">spawning_chance</field><field name=\"value\">true</field></block><block type=\"config_start\" deletable=\"false\" x=\"-11\" y=\"179\"><next><block type=\"config_category\"><field name=\"name\">Cyber Dog Spawn Chance</field><statement name=\"write\"><block type=\"config_variable\"><field name=\"name\">spawning_chance</field><field name=\"comment\">You can enter here a number between 0 and 1 that represents the percentage chance for the Cyber Dog of spawning. Default = 0.2</field><value name=\"value\"><block type=\"config_number_variable\"><field name=\"name\">spawning_chance</field><field name=\"value\">0.2</field></block></value></block></statement><next><block type=\"config_category\"><field name=\"name\">Cyber Dog Nuke Module</field><statement name=\"write\"><block type=\"config_variable\"><field name=\"name\">nuke_force</field><field name=\"comment\">At your own risks. Define the power of the Nuke module for the Cyber Dog. Default = 1000.0</field><value name=\"value\"><block type=\"config_number_variable\"><field name=\"name\">nuke_force</field><field name=\"value\">1000</field></block></value></block></statement></block></next></block></next></block></xml>",
+    "defining": true
+  }
+}

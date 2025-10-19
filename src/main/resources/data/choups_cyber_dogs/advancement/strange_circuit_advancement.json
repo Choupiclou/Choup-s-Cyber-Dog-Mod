@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "choups_cyber_dogs:strange_circuit"
+    },
+    "title": {
+      "translate": "advancements.strange_circuit_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.strange_circuit_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "strange_circuit_advancement_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "choups_cyber_dogs:strange_circuit"
+            ],
+            "count": {
+              "min": 1,
+              "max": 999
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "choups_cyber_dogs:choups_cyber_dogs"
+}

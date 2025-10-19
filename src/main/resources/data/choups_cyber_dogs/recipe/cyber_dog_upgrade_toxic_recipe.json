@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "b": {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    "c": {
+      "item": "choups_cyber_dogs:strange_circuit"
+    },
+    "d": {
+      "item": "minecraft:moss_block"
+    }
+  },
+  "result": {
+    "id": "choups_cyber_dogs:cyber_dog_upgrade_6",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    "b": {
+      "item": "minecraft:wither_rose"
+    },
+    "c": {
+      "item": "choups_cyber_dogs:strange_circuit"
+    },
+    "d": {
+      "item": "minecraft:soul_sand"
+    }
+  },
+  "result": {
+    "id": "choups_cyber_dogs:cyber_dog_upgrade_7",
+    "count": 1
+  }
+}

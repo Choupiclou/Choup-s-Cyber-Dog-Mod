@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "bde",
+    " f "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:copper_ingot"
+    },
+    "b": {
+      "item": "minecraft:emerald"
+    },
+    "c": {
+      "item": "minecraft:deepslate"
+    },
+    "d": {
+      "item": "minecraft:quartz"
+    },
+    "e": {
+      "item": "minecraft:redstone"
+    },
+    "f": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "id": "choups_cyber_dogs:strange_circuit",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:amethyst_block"
+    },
+    "b": {
+      "item": "minecraft:copper_block"
+    },
+    "c": {
+      "item": "choups_cyber_dogs:strange_circuit"
+    },
+    "d": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result": {
+    "id": "choups_cyber_dogs:cyber_dog_upgrade_3",
+    "count": 1
+  }
+}

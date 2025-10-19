@@ -1,0 +1,56 @@
+{
+  "_fv": 79,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Hoe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "circuited_hoe",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "",
+    "name": "§aShort-Circuit Hoe",
+    "specialInformation": {
+      "fixedValue": [
+        "",
+        "§7When an entity is hit:",
+        " §e[Short-Circuit]",
+        " §7Has a chance to strike down a lighting and slow your enemies.",
+        "",
+        "§7When right clicked:",
+        " §e[Self-Repair]",
+        " §7Gains a small amount of durability",
+        ""
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CyberDogCreativeTab"
+      }
+    ],
+    "efficiency": 8.0,
+    "attackSpeed": 4.0,
+    "enchantability": 2,
+    "damageVsEntity": 1.0,
+    "usageCount": 1428,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:StrangeCircuit"
+      }
+    ],
+    "immuneToFire": true,
+    "blockDropsTier": "DIAMOND",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "ShortCircuitSwordRightclicked"
+    },
+    "onEntityHitWith": {
+      "name": "ShortCircuitSwordLivingEntityIsHitWithTool"
+    }
+  }
+}

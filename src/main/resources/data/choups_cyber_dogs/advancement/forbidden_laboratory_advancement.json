@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:deepslate"
+    },
+    "title": "Forbidden Laboratory",
+    "description": "Enter in a Forbidden Laboratory",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "choups_cyber_dogs:choups_cyber_dogs",
+  "criteria": {
+    "in_custom_structure": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "location": {
+          "structure": "choups_cyber_dogs:forbidden_laboratory"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "in_custom_structure"
+    ]
+  ]
+}

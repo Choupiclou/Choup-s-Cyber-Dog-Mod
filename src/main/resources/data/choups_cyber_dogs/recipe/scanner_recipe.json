@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "choups_cyber_dogs:strange_circuit"
+    },
+    "b": {
+      "item": "minecraft:lime_stained_glass_pane"
+    }
+  },
+  "result": {
+    "id": "choups_cyber_dogs:scanner",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:golden_apple"
+    },
+    "b": {
+      "item": "minecraft:ghast_tear"
+    },
+    "c": {
+      "item": "choups_cyber_dogs:strange_circuit"
+    },
+    "d": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "result": {
+    "id": "choups_cyber_dogs:cyber_dog_upgrade_4",
+    "count": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "cyberdogambient": {
+    "sounds": [
+      {
+        "name": "choups_cyber_dogs:cyberdogbark",
+        "stream": false
+      }
+    ]
+  },
+  "cyberdogdeath": {
+    "sounds": [
+      {
+        "name": "choups_cyber_dogs:cyberdogdeath",
+        "stream": false
+      }
+    ]
+  },
+  "cyberdoghurt": {
+    "sounds": [
+      {
+        "name": "choups_cyber_dogs:cyberdoghurt",
+        "stream": false
+      }
+    ]
+  },
+  "electric_shock": {
+    "sounds": [
+      {
+        "name": "choups_cyber_dogs:electric-shock-334777",
+        "stream": false
+      }
+    ]
+  }
+}

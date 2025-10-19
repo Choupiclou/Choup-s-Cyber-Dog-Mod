@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "choups_cyber_dogs:forbidden_laboratory",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 70,
+    "separation": 60,
+    "salt": 983558700
+  }
+}
