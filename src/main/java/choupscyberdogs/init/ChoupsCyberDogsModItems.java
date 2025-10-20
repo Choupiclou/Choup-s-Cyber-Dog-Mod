@@ -19,6 +19,7 @@ import choupscyberdogs.item.ShortCircuitAxeItem;
 import choupscyberdogs.item.ScannerItem;
 import choupscyberdogs.item.CyberUpgrade9Item;
 import choupscyberdogs.item.CyberUpgrade8Item;
+import choupscyberdogs.item.CyberShearsItem;
 import choupscyberdogs.item.CyberDogUpgradeItem;
 import choupscyberdogs.item.CyberDogUpgrade7Item;
 import choupscyberdogs.item.CyberDogUpgrade6Item;
@@ -51,6 +52,7 @@ public class ChoupsCyberDogsModItems {
 	public static final DeferredItem<Item> CYBER_UPGRADE_9 = REGISTRY.register("cyber_upgrade_9", CyberUpgrade9Item::new);
 	public static final DeferredItem<Item> CYBER_DOG_UPGRADE_10 = REGISTRY.register("cyber_dog_upgrade_10", CyberDogUpgrade10Item::new);
 	public static final DeferredItem<Item> SLOT_UPGRADE = REGISTRY.register("slot_upgrade", SlotUpgradeItem::new);
+	public static final DeferredItem<Item> CYBER_SHEARS = REGISTRY.register("cyber_shears", CyberShearsItem::new);
 	// Start of user code block custom items
 	// End of user code block custom items
 }

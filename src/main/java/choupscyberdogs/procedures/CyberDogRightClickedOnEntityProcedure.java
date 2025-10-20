@@ -495,6 +495,107 @@ public class CyberDogRightClickedOnEntityProcedure {
 					if (sourceentity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal("Your Cyber Dog is staying here."), true);
 				}
+				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ChoupsCyberDogsModItems.CYBER_SHEARS.get()) {
+					if (world instanceof ServerLevel _level) {
+						(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).hurtAndBreak(1, _level, null, _stkprov -> {
+						});
+					}
+					entity.getPersistentData().putDouble("ModuleUsed", 0);
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.sheep.shear")), SoundSource.NEUTRAL, 1, (float) 0.8);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.sheep.shear")), SoundSource.NEUTRAL, 1, (float) 0.8, false);
+						}
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("choups_cyber_dogs:electric_shock")), SoundSource.NEUTRAL, 1, 1, false);
+						}
+					}
+					if (entity.getPersistentData().getBoolean("FieryAttacks") == true) {
+						if (world instanceof ServerLevel _level) {
+							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE.get()));
+							entityToSpawn.setPickUpDelay(10);
+							_level.addFreshEntity(entityToSpawn);
+						}
+						entity.getPersistentData().putBoolean("FieryAttacks", false);
+					}
+					if (entity.getPersistentData().getBoolean("ToxicModule") == true) {
+						if (world instanceof ServerLevel _level) {
+							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_6.get()));
+							entityToSpawn.setPickUpDelay(10);
+							_level.addFreshEntity(entityToSpawn);
+						}
+						entity.getPersistentData().putBoolean("ToxicModule", false);
+					}
+					if (entity.getPersistentData().getBoolean("LighningModule") == true) {
+						if (world instanceof ServerLevel _level) {
+							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_3.get()));
+							entityToSpawn.setPickUpDelay(10);
+							_level.addFreshEntity(entityToSpawn);
+						}
+						entity.getPersistentData().putBoolean("LighningModule", false);
+					}
+					if (entity.getPersistentData().getBoolean("HealthModule") == true) {
+						if (world instanceof ServerLevel _level) {
+							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_4.get()));
+							entityToSpawn.setPickUpDelay(10);
+							_level.addFreshEntity(entityToSpawn);
+						}
+						entity.getPersistentData().putBoolean("HealthModule", false);
+					}
+					if (entity.getPersistentData().getBoolean("NukeModule") == true) {
+						if (world instanceof ServerLevel _level) {
+							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_5.get()));
+							entityToSpawn.setPickUpDelay(10);
+							_level.addFreshEntity(entityToSpawn);
+						}
+						entity.getPersistentData().putBoolean("NukeModule", false);
+					}
+					if (entity.getPersistentData().getBoolean("SpeedModule") == true) {
+						if (world instanceof ServerLevel _level) {
+							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_2.get()));
+							entityToSpawn.setPickUpDelay(10);
+							_level.addFreshEntity(entityToSpawn);
+						}
+						entity.getPersistentData().putBoolean("SpeedModule", false);
+					}
+					if (entity.getPersistentData().getBoolean("VampireModule") == true) {
+						if (world instanceof ServerLevel _level) {
+							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ChoupsCyberDogsModItems.CYBER_UPGRADE_8.get()));
+							entityToSpawn.setPickUpDelay(10);
+							_level.addFreshEntity(entityToSpawn);
+						}
+						entity.getPersistentData().putBoolean("VampireModule", false);
+					}
+					if (entity.getPersistentData().getBoolean("WitherModule") == true) {
+						if (world instanceof ServerLevel _level) {
+							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_7.get()));
+							entityToSpawn.setPickUpDelay(10);
+							_level.addFreshEntity(entityToSpawn);
+						}
+						entity.getPersistentData().putBoolean("WitherModule", false);
+					}
+					if (entity.getPersistentData().getBoolean("SlownessModule") == true) {
+						if (world instanceof ServerLevel _level) {
+							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ChoupsCyberDogsModItems.CYBER_UPGRADE_9.get()));
+							entityToSpawn.setPickUpDelay(10);
+							_level.addFreshEntity(entityToSpawn);
+						}
+						entity.getPersistentData().putBoolean("SlownessModule", false);
+					}
+					if (entity.getPersistentData().getBoolean("StrenghtModule") == true) {
+						if (world instanceof ServerLevel _level) {
+							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ChoupsCyberDogsModItems.CYBER_DOG_UPGRADE_10.get()));
+							entityToSpawn.setPickUpDelay(10);
+							_level.addFreshEntity(entityToSpawn);
+						}
+						entity.getPersistentData().putBoolean("StrenghtModule", false);
+					}
+				}
 				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ChoupsCyberDogsModItems.SCANNER.get()) {
 					if (world instanceof ServerLevel _level) {
 						(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).hurtAndBreak(1, _level, null, _stkprov -> {

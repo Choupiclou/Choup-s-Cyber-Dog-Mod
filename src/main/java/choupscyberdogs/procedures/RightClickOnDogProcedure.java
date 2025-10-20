@@ -57,75 +57,77 @@ public class RightClickOnDogProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity instanceof Wolf) {
-			if (!(entity instanceof TamableAnimal _tamIsTamedBy && sourceentity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false)) {
-				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ChoupsCyberDogsModItems.STRANGE_CIRCUIT.get()
-						|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == ChoupsCyberDogsModItems.STRANGE_CIRCUIT.get()) {
-					if (Math.random() < (double) ChoupsCyberDogConfiguration.SPAWNING_CHANCE.get()) {
-						if (sourceentity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(ChoupsCyberDogsModItems.STRANGE_CIRCUIT.get());
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-						}
-						if (sourceentity instanceof LivingEntity _entity)
-							_entity.swing(InteractionHand.MAIN_HAND, true);
-						if (!entity.level().isClientSide())
-							entity.discard();
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.LARGE_SMOKE, x, y, z, 15, 2, 2, 2, 0.25);
-						if (world instanceof Level _level) {
-							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.anvil.use")), SoundSource.BLOCKS, 1, (float) 0.8);
-							} else {
-								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.anvil.use")), SoundSource.BLOCKS, 1, (float) 0.8, false);
+		if (ChoupsCyberDogConfiguration.IS_THE_CYBER_DOG_SPAWNABLE.get() == true) {
+			if (entity instanceof Wolf) {
+				if (!(entity instanceof TamableAnimal _tamIsTamedBy && sourceentity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false)) {
+					if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ChoupsCyberDogsModItems.STRANGE_CIRCUIT.get()
+							|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == ChoupsCyberDogsModItems.STRANGE_CIRCUIT.get()) {
+						if (Math.random() < (double) ChoupsCyberDogConfiguration.SPAWNING_CHANCE.get()) {
+							if (sourceentity instanceof Player _player) {
+								ItemStack _stktoremove = new ItemStack(ChoupsCyberDogsModItems.STRANGE_CIRCUIT.get());
+								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 							}
-						}
-						ChoupsCyberDogsMod.queueServerWork(10, () -> {
+							if (sourceentity instanceof LivingEntity _entity)
+								_entity.swing(InteractionHand.MAIN_HAND, true);
+							if (!entity.level().isClientSide())
+								entity.discard();
+							if (world instanceof ServerLevel _level)
+								_level.sendParticles(ParticleTypes.LARGE_SMOKE, x, y, z, 15, 2, 2, 2, 0.25);
 							if (world instanceof Level _level) {
 								if (!_level.isClientSide()) {
-									_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.wolf.growl")), SoundSource.MASTER, 1, (float) 0.7);
+									_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.anvil.use")), SoundSource.BLOCKS, 1, (float) 0.8);
 								} else {
-									_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.wolf.growl")), SoundSource.MASTER, 1, (float) 0.7, false);
+									_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.anvil.use")), SoundSource.BLOCKS, 1, (float) 0.8, false);
 								}
 							}
-						});
-						ChoupsCyberDogsMod.queueServerWork(20, () -> {
-							if (sourceentity instanceof ServerPlayer _player) {
-								AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("choups_cyber_dogs:cyber_dog_advancement"));
-								if (_adv != null) {
-									AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-									if (!_ap.isDone()) {
-										for (String criteria : _ap.getRemainingCriteria())
-											_player.getAdvancements().award(_adv, criteria);
+							ChoupsCyberDogsMod.queueServerWork(10, () -> {
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.wolf.growl")), SoundSource.MASTER, 1, (float) 0.7);
+									} else {
+										_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.wolf.growl")), SoundSource.MASTER, 1, (float) 0.7, false);
 									}
 								}
-							}
-							if (world instanceof ServerLevel _level) {
-								LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-								entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
-								entityToSpawn.setVisualOnly(true);
-								_level.addFreshEntity(entityToSpawn);
-							}
-							if (world instanceof ServerLevel _level)
-								_level.sendParticles(ParticleTypes.CLOUD, x, y, z, 15, 2, 2, 2, 0.25);
-							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = ChoupsCyberDogsModEntities.CYBER_DOG_01.get().spawn(_level, BlockPos.containing(entity.getX(), entity.getY() + 1, entity.getZ()), MobSpawnType.MOB_SUMMONED);
-								if (entityToSpawn != null) {
-									entityToSpawn.setYRot(entity.getYRot());
-									entityToSpawn.setYBodyRot(entity.getYRot());
-									entityToSpawn.setYHeadRot(entity.getYRot());
-									entityToSpawn.setDeltaMovement(0, 0, 0);
+							});
+							ChoupsCyberDogsMod.queueServerWork(20, () -> {
+								if (sourceentity instanceof ServerPlayer _player) {
+									AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("choups_cyber_dogs:cyber_dog_advancement"));
+									if (_adv != null) {
+										AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+										if (!_ap.isDone()) {
+											for (String criteria : _ap.getRemainingCriteria())
+												_player.getAdvancements().award(_adv, criteria);
+										}
+									}
 								}
+								if (world instanceof ServerLevel _level) {
+									LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+									entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
+									entityToSpawn.setVisualOnly(true);
+									_level.addFreshEntity(entityToSpawn);
+								}
+								if (world instanceof ServerLevel _level)
+									_level.sendParticles(ParticleTypes.CLOUD, x, y, z, 15, 2, 2, 2, 0.25);
+								if (world instanceof ServerLevel _level) {
+									Entity entityToSpawn = ChoupsCyberDogsModEntities.CYBER_DOG_01.get().spawn(_level, BlockPos.containing(entity.getX(), entity.getY() + 1, entity.getZ()), MobSpawnType.MOB_SUMMONED);
+									if (entityToSpawn != null) {
+										entityToSpawn.setYRot(entity.getYRot());
+										entityToSpawn.setYBodyRot(entity.getYRot());
+										entityToSpawn.setYHeadRot(entity.getYRot());
+										entityToSpawn.setDeltaMovement(0, 0, 0);
+									}
+								}
+							});
+						} else {
+							if (sourceentity instanceof LivingEntity _entity)
+								_entity.swing(InteractionHand.MAIN_HAND, true);
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 2, false, true));
+							entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC)), 5);
+							if (sourceentity instanceof Player _player) {
+								ItemStack _stktoremove = new ItemStack(ChoupsCyberDogsModItems.STRANGE_CIRCUIT.get());
+								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 							}
-						});
-					} else {
-						if (sourceentity instanceof LivingEntity _entity)
-							_entity.swing(InteractionHand.MAIN_HAND, true);
-						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 2, false, true));
-						entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC)), 5);
-						if (sourceentity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(ChoupsCyberDogsModItems.STRANGE_CIRCUIT.get());
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 						}
 					}
 				}

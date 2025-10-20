@@ -128,6 +128,19 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -296,6 +309,38 @@
         {
           "type": "minecraft:empty",
           "weight": 45,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "choups_cyber_dogs:cyber_shears",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 30,
           "functions": [
             {
               "function": "minecraft:set_count",

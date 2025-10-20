@@ -913,6 +913,31 @@
           "src/main/resources/data/choups_cyber_dogs/recipe/slot_upgrade_recipe.json"
         ]
       }
+    },
+    {
+      "name": "CyberShears",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_shears",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/choups_cyber_dogs/models/item/cyber_shears.json",
+          "src/main/java/choupscyberdogs/item/CyberShearsItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CyberShearsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_shears_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/choups_cyber_dogs/recipe/cyber_shears_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1001,6 +1026,7 @@
       "ShortCircuitShovel",
       "ShortCircuitHoe",
       "Scanner",
+      "CyberShears",
       "StrangeCircuit",
       "SlotUpgrade",
       "CyberDogUpgrade2",
@@ -1170,7 +1196,13 @@
       "item.choups_cyber_dogs.slot_upgrade.description_4": "",
       "item.choups_cyber_dogs.slot_upgrade.description_1": "§7When right clicked on a Cyber Dog:",
       "item.choups_cyber_dogs.slot_upgrade.description_2": " §9Increases the Cyber Dog slot capacity",
-      "item.choups_cyber_dogs.slot_upgrade.description_0": ""
+      "item.choups_cyber_dogs.slot_upgrade.description_0": "",
+      "item.choups_cyber_dogs.cyber_shears.description_3": " §9Removes all its attached modules.",
+      "item.choups_cyber_dogs.cyber_shears.description_2": "§7When right clicked on a Cyber Dog:",
+      "item.choups_cyber_dogs.cyber_shears.description_4": "",
+      "item.choups_cyber_dogs.cyber_shears.description_1": "§7§oWorks as Shears!",
+      "item.choups_cyber_dogs.cyber_shears.description_0": "",
+      "item.choups_cyber_dogs.cyber_shears": "§eCyber Shears"
     }
   },
   "metadata": {

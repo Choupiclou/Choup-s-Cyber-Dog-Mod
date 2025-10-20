@@ -1,0 +1,42 @@
+{
+  "_fv": 79,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Shears",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "cyber_shears",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "",
+    "name": "§eCyber Shears",
+    "specialInformation": {
+      "fixedValue": [
+        "",
+        "§7§oWorks as Shears!",
+        "§7When right clicked on a Cyber Dog:",
+        " §9Removes all its attached modules.",
+        ""
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CyberDogCreativeTab"
+      }
+    ],
+    "efficiency": 9.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 350,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": true,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

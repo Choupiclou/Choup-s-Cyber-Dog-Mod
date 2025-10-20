@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:copper_ingot"
+    },
+    "b": {
+      "item": "choups_cyber_dogs:strange_circuit"
+    },
+    "c": {
+      "item": "minecraft:shears"
+    },
+    "d": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "id": "choups_cyber_dogs:cyber_shears",
+    "count": 1
+  }
+}

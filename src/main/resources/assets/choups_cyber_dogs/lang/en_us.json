@@ -152,5 +152,11 @@
   "item.choups_cyber_dogs.slot_upgrade.description_4": "",
   "item.choups_cyber_dogs.slot_upgrade.description_1": "§7When right clicked on a Cyber Dog:",
   "item.choups_cyber_dogs.slot_upgrade.description_2": " §9Increases the Cyber Dog slot capacity",
-  "item.choups_cyber_dogs.slot_upgrade.description_0": ""
+  "item.choups_cyber_dogs.slot_upgrade.description_0": "",
+  "item.choups_cyber_dogs.cyber_shears.description_3": " §9Removes all its attached modules.",
+  "item.choups_cyber_dogs.cyber_shears.description_2": "§7When right clicked on a Cyber Dog:",
+  "item.choups_cyber_dogs.cyber_shears.description_4": "",
+  "item.choups_cyber_dogs.cyber_shears.description_1": "§7§oWorks as Shears!",
+  "item.choups_cyber_dogs.cyber_shears.description_0": "",
+  "item.choups_cyber_dogs.cyber_shears": "§eCyber Shears"
 }
